@@ -1,1 +1,1 @@
-# Awesome-Continual-Learning-methods-for-Generative-Models
+# Awesome-Continual-Learning-for-Generative-Models
