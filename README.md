@@ -1,5 +1,17 @@
 # Awesome-Continual-Learning-in-Generative-Models
 
+## :newspaper: News
+
+- **2025.06**: We released a repository on continual learning in generative models, and a corresponding survey will be available soon.
+
+## :sparkles: Motivation
+
+The remarkable progress of generative models has equipped AI systems with human-level capabilities in content generation. Yet, their practical deployment is hindered by catastrophic forgetting—a fundamental issue where learning new tasks erases previously acquired knowledge. Despite growing interest, no comprehensive survey exists to systematically categorize and analyze continual learning methods for mainstream generative models (e.g., Large Language Models, Multimodal Large Language Models, Vision-Language Action Models and Diffusion Models). This work fills the gap by:
+
+- **Classifying**​​ solutions into architecture-based, regularization-based, and replay-based paradigms, aligning with human-like memory mechanisms.
+- **Analyzing**​​ task adaptations, benchmarks, and model backbones to reveal key insights.
+- **Prospecting**​​ future directions for continual learning in generative models, paving the way for scalable and adaptable intelligence.
+
 ## Continual Learning in Large Language Model
 
 * Continual Learning for Task-oriented Dialogue System with Iterative Network Pruning, Expanding and Masking [[Paper]](https://arxiv.org/abs/2107.08173) [[Code]](https://github.com/siat-nlp/TPEM) ![](https://img.shields.io/badge/ACL-2021-blue)
