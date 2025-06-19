@@ -2,6 +2,7 @@
 
 ## 📰: News
 
+- **2025.06**: We released our survey paper "[A Comprehensive Survey on Continual Learning in Generative Models](https://arxiv.org/pdf/2506.13045)". Feel free to cite or open pull requests!
 - **2025.06**: We released a repository on continual learning in generative models, and a corresponding survey will be available soon.
 
 ## ✨: Motivation
