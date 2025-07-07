@@ -1,12 +1,5 @@
 # Awesome-Continual-Learning-in-Generative-Models
 
-## 📰 News
-
-- **2025.07**: Check out our new work: "[Federated Continual Instruction Tuning](https://arxiv.org/pdf/2503.12897)" (ICCV 2025). The code is open sourced [here](https://github.com/Ghy0501/FCIT).
-- **2025.07**: We have updated recent public work on continual learning in generative models. If you notice any omissions, please feel free to contact us!
-- **2025.06**: We released our survey paper "[A Comprehensive Survey on Continual Learning in Generative Models](https://arxiv.org/pdf/2506.13045)". Feel free to cite or open pull requests!
-- **2025.06**: We released a repository on continual learning in generative models, and a corresponding survey will be available soon.
-
 ## ✨ Motivation
 
 The remarkable progress of generative models has equipped AI systems with human-level capabilities in content generation. Yet, their practical deployment is hindered by catastrophic forgetting—a fundamental issue where learning new tasks erases previously acquired knowledge. Despite growing interest, no comprehensive survey exists to systematically categorize and analyze continual learning methods for mainstream generative models (e.g., Large Language Models, Multimodal Large Language Models, Vision-Language Action Models and Diffusion Models). This work fills the gap by:
@@ -16,6 +9,13 @@ The remarkable progress of generative models has equipped AI systems with human-
 - **Prospecting**​​ future directions for continual learning in generative models, paving the way for scalable and adaptable intelligence.
 
 ![overall](figures/overall.png)
+
+## 📰 News
+
+- **2025.07**: Check out our new work: "[Federated Continual Instruction Tuning](https://arxiv.org/pdf/2503.12897)" (ICCV 2025). The code is open sourced [here](https://github.com/Ghy0501/FCIT).
+- **2025.07**: We have updated recent public work on continual learning in generative models. If you notice any omissions, please feel free to contact us!
+- **2025.06**: We released our survey paper "[A Comprehensive Survey on Continual Learning in Generative Models](https://arxiv.org/pdf/2506.13045)". Feel free to cite or open pull requests!
+- **2025.06**: We released a repository on continual learning in generative models, and a corresponding survey will be available soon.
 
 ## 📖 Framework
 
