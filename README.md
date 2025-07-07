@@ -112,6 +112,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Multi-Prototype Grouping for Continual Learning in Visual Question Answering [[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10890400) ![](https://img.shields.io/badge/ICASSP-2025-blue)
 * VLM-Assisted Continual learning for Visual Question Answering in Self-Driving [[Paper]](https://arxiv.org/pdf/2502.00843) ![](https://img.shields.io/badge/arXiv-2025.02-red)
 * Adapt-∞: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection [[Paper]](https://arxiv.org/pdf/2410.10636v1) [[Code]](https://github.com/adymaharana/adapt-inf) ![](https://img.shields.io/badge/ICLR-2025-blue)
+* OASIS: Online Sample Selection for Continual Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.02011?) ![](https://img.shields.io/badge/arXiv-2025.06-red)
 
 ## Continual Learning in Vision-Language Action Model
 
