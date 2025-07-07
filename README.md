@@ -144,7 +144,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 ### Replay-based Approaches
 * Create Your World: Lifelong Text-to-Image Diffusion [[Paper]](https://arxiv.org/pdf/2309.04430) ![](https://img.shields.io/badge/TPAMI-2024-blue)
 
-## 🫰 Citation
+## 🌞 Citation
 
 ```bibtex
 @article{guo2025comprehensive,
