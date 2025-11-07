@@ -40,6 +40,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Q-Tuning: Queue-based Prompt Tuning for Lifelong Few-shot Language Learning [[Paper]](https://arxiv.org/pdf/2404.14607) ![](https://img.shields.io/badge/NAACL_findings-2024-blue)
 * Adaptive Prompting for Continual Relation Extraction: A Within-Task Variance Perspective [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/34616) ![](https://img.shields.io/badge/AAAI-2025-blue)
 * SEE: Continual Fine-tuning with Sequential Ensemble of Experts [[Paper]](https://arxiv.org/pdf/2504.06664) [[Code]](https://github.com/Linzwcs/SEE) ![](https://img.shields.io/badge/ACL_findings-2025-blue)
+* TreeLoRA: Efficient Continual Learning via Layer-Wise LoRAs Guided by a Hierarchical Gradient-Similarity Tree [[Paper]](https://arxiv.org/pdf/2506.10355?) [[Code]](https://github.com/ZinYY/TreeLoRA) ![](https://img.shields.io/badge/ICML-2025-blue)
 
 ### Regularization-based Approaches
 * Orthogonal Subspace Learning for Language Model Continual Learning [[Paper]](https://aclanthology.org/2023.findings-emnlp.715.pdf) [[Code]](https://github.com/cmnfriend/O-LoRA) ![](https://img.shields.io/badge/EMNLP_findings-2023-blue)
@@ -69,6 +70,8 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Towards Effective and Efficient Continual Pre-training of Large Language Models [[Paper]](https://arxiv.org/pdf/2407.18743) [[Code]](https://github.com/RUC-GSAI/Llama-3-SynE) ![](https://img.shields.io/badge/ACL-2025-blue)
 * Don't Half-listen: Capturing Key-part Information in Continual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2403.10056) ![](https://img.shields.io/badge/ACL-2025-blue)
 * Efficient Domain Continual pretraining by Mitigating the Stability Gap [[Paper]](https://arxiv.org/pdf/2406.14833) ![](https://img.shields.io/badge/ACL-2025-blue)
+* Data-Efficient Selection via Grammatical Complexity in Continual Pre-training of Domain-Specific LLMs [[Paper]](https://aclanthology.org/2025.emnlp-main.1121.pdf) [[Code]](https://github.com/PPMark0712/CDF-GC) ![](https://img.shields.io/badge/EMNLP-2025-blue)
+* Empowering Math Problem Generation and Reasoning for Large Language Model via Synthetic Data based Continual Learning Framework [[Paper]](https://aclanthology.org/2025.emnlp-main.1223.pdf) ![](https://img.shields.io/badge/EMNLP-2025-blue)
 
 
 ## Continual Learning in Multimodal Large Language Model
@@ -107,6 +110,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2505.02486?) [[Code]](https://github.com/jinpeng0528/SEFE/) ![](https://img.shields.io/badge/ICML-2025-blue)
 * LoRASculpt: Sculpting LoRA for Harmonizing General and Specialized Knowledge in Multimodal Large Language Models [[Paper]](https://arxiv.org/pdf/2503.16843) [[Code]](https://github.com/LiangJian24/LoRASculpt) ![](https://img.shields.io/badge/CVPR-2025-blue)
 * LLaVA-c: Continual Improved Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
+* Bisecle: Binding and Separation in Continual Learning for Video Language Understanding [[Paper]](https://arxiv.org/pdf/2507.00469) [[Code]](https://github.com/cruiseresearchgroup/Bisecle) ![](https://img.shields.io/badge/NeruIPS-2025-blue)
 
 ### Replay-based Approaches
 * VQACL: A Novel Visual Question Answering Continual Learning Setting [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_VQACL_A_Novel_Visual_Question_Answering_Continual_Learning_Setting_CVPR_2023_paper.pdf) [[Code]](https://github.com/zhangxi1997/VQACL) ![](https://img.shields.io/badge/CVPR-2023-blue)
@@ -115,6 +119,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * VLM-Assisted Continual learning for Visual Question Answering in Self-Driving [[Paper]](https://arxiv.org/pdf/2502.00843) ![](https://img.shields.io/badge/arXiv-2025.02-red)
 * Adapt-∞: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection [[Paper]](https://arxiv.org/pdf/2410.10636v1) [[Code]](https://github.com/adymaharana/adapt-inf) ![](https://img.shields.io/badge/ICLR-2025-blue)
 * OASIS: Online Sample Selection for Continual Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.02011?) ![](https://img.shields.io/badge/arXiv-2025.06-red)
+* Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs [[Paper]](https://arxiv.org/pdf/2503.07663) ![](https://img.shields.io/badge/EMNLP-2025-blue)
 
 ## Continual Learning in Vision-Language Action Model
 
@@ -128,6 +133,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 ### Regularization-based Approaches
 * Online Continual Learning for Interactive Instruction Following Agents [[Paper]](https://arxiv.org/pdf/2403.07548) [[Code]](https://github.com/snumprlab/cl-alfred) ![](https://img.shields.io/badge/ICLR-2024-blue)
 * M2Distill: Multi-Modal Distillation for Lifelong Imitation Learning [[Paper]](https://arxiv.org/pdf/2410.00064?) ![](https://img.shields.io/badge/arXiv-2024.10-red)
+* C-NAV: Towards Self-Evolving Continual Object Navigation in Open World [[Paper]](https://arxiv.org/pdf/2510.20685) [[Code]](https://github.com/BigTree765/C-Nav) ![](https://img.shields.io/badge/NeurIPS-2025-blue)
 
 ### Replay-based Approaches
 * iManip: Skill-Incremental Learning for Robotic Manipulation [[Paper]](https://arxiv.org/pdf/2503.07087) ![](https://img.shields.io/badge/arXiv-2025.03-red)
@@ -144,6 +150,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization? [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/eadb6e5ed8a02ada4affb07dfd62ab5e-Paper-Conference.pdf) [[Code]](https://github.com/JiahuaDong/CIFC) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
 * ConceptGuard: Continual Personalized Text-to-Image Generation with Forgetting and Confusion Mitigation [[Paper]](https://arxiv.org/pdf/2503.10358?) ![](https://img.shields.io/badge/arXiv-2025.03-red)
 * Mining Your Own Secrets: Diffusion Classifier Scores for Continual Personalization of Text-to-Image Diffusion Models [[Paper]](https://arxiv.org/pdf/2410.00700) ![](https://img.shields.io/badge/ICLR-2025-blue)
+* Continual Personalization for Diffusion Models [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_Continual_Personalization_for_Diffusion_Models_ICCV_2025_paper.pdf) ![](https://img.shields.io/badge/ICCV-2025-blue)
 
 ### Replay-based Approaches
 * Create Your World: Lifelong Text-to-Image Diffusion [[Paper]](https://arxiv.org/pdf/2309.04430) ![](https://img.shields.io/badge/TPAMI-2024-blue)
