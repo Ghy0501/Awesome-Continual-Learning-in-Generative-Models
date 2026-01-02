@@ -143,12 +143,13 @@ The remarkable progress of generative models has equipped AI systems with human-
 
 ### Architecture-based Approaches
 * Continual Diffusion: Continual Customization of Text-to-Image Diffusion with C-LoRA [[Paper]](https://arxiv.org/pdf/2304.06027) ![](https://img.shields.io/badge/TMLR-2024-blue)
+* Bring Your Dreams to Life: Continual Text-to-Video Customization [[Paper]](https://arxiv.org/pdf/2512.05802) [[Code]](https://github.com/JiahuaDong/CCVD) ![](https://img.shields.io/badge/AAAI-2026-blue)
 
 ### Regularization-based Approaches
 * MuseumMaker: Continual Style Customization without Catastrophic Forgetting [[Paper]](https://arxiv.org/pdf/2404.16612) ![](https://img.shields.io/badge/TIP-2025-blue)
 * Towards Lifelong Few-Shot Customization of Text-to-Image Diffusion [[Paper]](https://arxiv.org/pdf/2411.05544) ![](https://img.shields.io/badge/arXiv-2024.11-red)
 * How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization? [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/eadb6e5ed8a02ada4affb07dfd62ab5e-Paper-Conference.pdf) [[Code]](https://github.com/JiahuaDong/CIFC) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
-* ConceptGuard: Continual Personalized Text-to-Image Generation with Forgetting and Confusion Mitigation [[Paper]](https://arxiv.org/pdf/2503.10358?) ![](https://img.shields.io/badge/arXiv-2025.03-red)
+* ConceptGuard: Continual Personalized Text-to-Image Generation with Forgetting and Confusion Mitigation [[Paper]](https://arxiv.org/pdf/2503.10358?) ![](https://img.shields.io/badge/CVPR-2025-blue)
 * Mining Your Own Secrets: Diffusion Classifier Scores for Continual Personalization of Text-to-Image Diffusion Models [[Paper]](https://arxiv.org/pdf/2410.00700) ![](https://img.shields.io/badge/ICLR-2025-blue)
 * Continual Personalization for Diffusion Models [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_Continual_Personalization_for_Diffusion_Models_ICCV_2025_paper.pdf) ![](https://img.shields.io/badge/ICCV-2025-blue)
 
