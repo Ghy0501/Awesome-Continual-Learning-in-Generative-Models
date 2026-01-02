@@ -12,6 +12,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 
 ## 📰 News
 
+- **2025.12**: We have released [MCITlib](https://arxiv.org/pdf/2508.07307), the first complete open-source codebase providing benchmarks and methods for Multimodal Continual Instruction Tuning. The code is open sourced [here](https://github.com/Ghy0501/MCITlib).
 - **2025.07**: Check out our new work: "[Federated Continual Instruction Tuning](https://arxiv.org/pdf/2503.12897)" (ICCV 2025). The code is open sourced [here](https://github.com/Ghy0501/FCIT).
 - **2025.07**: We have updated recent public work on continual learning in generative models. If you notice any omissions, please feel free to contact us!
 - **2025.06**: We released our survey paper "[A Comprehensive Survey on Continual Learning in Generative Models](https://arxiv.org/pdf/2506.13045)". Feel free to cite or open pull requests!
