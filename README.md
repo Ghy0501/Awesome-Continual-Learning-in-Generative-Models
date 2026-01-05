@@ -113,6 +113,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * LoRASculpt: Sculpting LoRA for Harmonizing General and Specialized Knowledge in Multimodal Large Language Models [[Paper]](https://arxiv.org/pdf/2503.16843) [[Code]](https://github.com/LiangJian24/LoRASculpt) ![](https://img.shields.io/badge/CVPR-2025-blue)
 * LLaVA-c: Continual Improved Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
 * Bisecle: Binding and Separation in Continual Learning for Video Language Understanding [[Paper]](https://arxiv.org/pdf/2507.00469) [[Code]](https://github.com/cruiseresearchgroup/Bisecle) ![](https://img.shields.io/badge/NeruIPS-2025-blue)
+* Harmonious Parameter Adaptation in Continual Visual Instruction Tuning for Safety-Aligned MLLMs [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
 
 ### Replay-based Approaches
 * VQACL: A Novel Visual Question Answering Continual Learning Setting [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_VQACL_A_Novel_Visual_Question_Answering_Continual_Learning_Setting_CVPR_2023_paper.pdf) [[Code]](https://github.com/zhangxi1997/VQACL) ![](https://img.shields.io/badge/CVPR-2023-blue)
@@ -121,7 +122,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * VLM-Assisted Continual learning for Visual Question Answering in Self-Driving [[Paper]](https://arxiv.org/pdf/2502.00843) ![](https://img.shields.io/badge/arXiv-2025.02-red)
 * Adapt-∞: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection [[Paper]](https://arxiv.org/pdf/2410.10636v1) [[Code]](https://github.com/adymaharana/adapt-inf) ![](https://img.shields.io/badge/ICLR-2025-blue)
 * OASIS: Online Sample Selection for Continual Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.02011?) ![](https://img.shields.io/badge/arXiv-2025.06-red)
-* Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs [[Paper]](https://arxiv.org/pdf/2503.07663) ![](https://img.shields.io/badge/EMNLP-2025-blue)
+* Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs [[Paper]](https://arxiv.org/pdf/2511.20158) ![](https://img.shields.io/badge/arXiv-2025.11-red)
 
 ## Continual Learning in Vision-Language Action Model
 
