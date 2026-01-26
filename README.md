@@ -132,6 +132,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * QueST: Self-Supervised Skill Abstractions for Learning Continuous Control [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/076c3e48fa502c660902105965fdd9f6-Paper-Conference.pdf) [[Code]](https://quest-model.github.io/) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
 * Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning [[Paper]](https://www.nature.com/articles/s42256-025-00983-2.pdf) ![](https://img.shields.io/badge/Nature_Machine_Intelligence-2025-blue)
 * Hierarchical-Task-Aware Multi-modal Mixture of Incremental LoRA Experts for Embodied Continual Learning [[Paper]](https://arxiv.org/pdf/2506.04595) ![](https://img.shields.io/badge/ACL-2025-blue)
+* CLARE: Continual Learning for Vision-Language-Action Models via Autonomous Adapter Routing and Expansion [[Paper]](https://arxiv.org/pdf/2601.09512) [[Code]](https://github.com/utiasDSL/clare) ![](https://img.shields.io/badge/arXiv-2026.01-red)
 
 ### Regularization-based Approaches
 * Online Continual Learning for Interactive Instruction Following Agents [[Paper]](https://arxiv.org/pdf/2403.07548) [[Code]](https://github.com/snumprlab/cl-alfred) ![](https://img.shields.io/badge/ICLR-2024-blue)
