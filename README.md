@@ -119,6 +119,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * LLaVA-c: Continual Improved Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
 * Bisecle: Binding and Separation in Continual Learning for Video Language Understanding [[Paper]](https://arxiv.org/pdf/2507.00469) [[Code]](https://github.com/cruiseresearchgroup/Bisecle) ![](https://img.shields.io/badge/NeruIPS-2025-blue)
 * Harmonious Parameter Adaptation in Continual Visual Instruction Tuning for Safety-Aligned MLLMs [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
+* Multimodal Continual Instruction Tuning with Dynamic Gradient Guidance [[Paper]](https://arxiv.org/pdf/2511.15164) ![](https://img.shields.io/badge/arXiv-2025.11-red)
 * KeepLoRA: Continual Learning with Residual Gradient Adaptation [[Paper]](https://openreview.net/attachment?id=T3Vc5fkTzV&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
 
 ### Replay-based Approaches
