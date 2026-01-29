@@ -12,6 +12,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 
 ## 📰 News
 
+- **2026.01**: We have updated the repository to include relevant papers accepted to **ICLR 2026**. If you notice any omissions or have any questions, please feel free to open an issue!
 - **2025.12**: We have released [MCITlib](https://arxiv.org/pdf/2508.07307), the first complete open-source codebase providing benchmarks and methods for Multimodal Continual Instruction Tuning. The code is open sourced [here](https://github.com/Ghy0501/MCITlib).
 - **2025.07**: Check out our new work: "[Federated Continual Instruction Tuning](https://arxiv.org/pdf/2503.12897)" (ICCV 2025). The code is open sourced [here](https://github.com/Ghy0501/FCIT).
 - **2025.07**: We have updated recent public work on continual learning in generative models. If you notice any omissions, please feel free to contact us!
@@ -54,6 +55,9 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning [[Paper]](https://openreview.net/pdf?id=gc8QAQfXv6) [[Code]](https://github.com/GangweiJiang/FvForgetting) ![](https://img.shields.io/badge/ICLR-2025-blue)
 * Velocitune: A Velocity-based Dynamic Domain Reweighting Method for Continual Pre-training [[Paper]](https://arxiv.org/pdf/2411.14318) ![](https://img.shields.io/badge/ACL-2025-blue)
 * Recurrent Knowledge Localization and Fusion for Language Model Continual Learning [[Paper]](https://arxiv.org/pdf/2502.17510) [[Code]](https://github.com/WoodScene/Recurrent_KIF) ![](https://img.shields.io/badge/ACL-2025-blue)
+* Merge before Forget: A Single LoRA Continual Learning via Continual Merging [[Paper]](https://openreview.net/attachment?id=i1Rj7yU6eF&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
+* Meta-UCF: Unified Task-Conditioned LoRA Generation for Continual Learning in Large Language Models [[Paper]](https://openreview.net/attachment?id=iNg5KL7eTC&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
+* Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual Learning [[Paper]](https://openreview.net/attachment?id=vQcyqsGJDw&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
 
 ### Replay-based Approaches
 * Fine-tuned Language Models are Continual Learners [[Paper]](https://aclanthology.org/2022.emnlp-main.410.pdf) [[Code]](https://github.com/ThomasScialom/T0_continual_learning) ![](https://img.shields.io/badge/EMNLP-2022-blue)
@@ -98,6 +102,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Enhancing Multimodal Continual Instruction Tuning with BranchLoRA [[Paper]](https://arxiv.org/pdf/2506.02041) [[Code]](https://github.com/BladeDancer957/BranchLoRA) ![](https://img.shields.io/badge/ACL-2025-blue)
 * Progressive LoRA for Multimodal Continual Instruction Tuning [[Paper]](https://aclanthology.org/2025.findings-acl.143.pdf) [[Code]](https://github.com/ku-nlp/ProgLoRA) ![](https://img.shields.io/badge/ACL_findings-2025-blue)
 * LoRA in LoRA: Towards Parameter-Efficient Architecture Expansionfor Continual Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2508.06202) ![](https://img.shields.io/badge/AAAI-2026-blue)
+* PCLR: Progressively Compressed LoRA for Multimodal Continual Instruction Tuning [[Paper]](https://openreview.net/attachment?id=WdP1NVSzsz&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
 
 ### Regularization-based Approaches
 * Multi-Domain Lifelong Visual Question Answering via Self-Critical Distillation [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3581783.3612121) ![](https://img.shields.io/badge/ACMMM-2023-blue)
@@ -114,6 +119,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * LLaVA-c: Continual Improved Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
 * Bisecle: Binding and Separation in Continual Learning for Video Language Understanding [[Paper]](https://arxiv.org/pdf/2507.00469) [[Code]](https://github.com/cruiseresearchgroup/Bisecle) ![](https://img.shields.io/badge/NeruIPS-2025-blue)
 * Harmonious Parameter Adaptation in Continual Visual Instruction Tuning for Safety-Aligned MLLMs [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
+* KeepLoRA: Continual Learning with Residual Gradient Adaptation [[Paper]](https://openreview.net/attachment?id=T3Vc5fkTzV&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
 
 ### Replay-based Approaches
 * VQACL: A Novel Visual Question Answering Continual Learning Setting [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_VQACL_A_Novel_Visual_Question_Answering_Continual_Learning_Setting_CVPR_2023_paper.pdf) [[Code]](https://github.com/zhangxi1997/VQACL) ![](https://img.shields.io/badge/CVPR-2023-blue)
@@ -133,6 +139,8 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning [[Paper]](https://www.nature.com/articles/s42256-025-00983-2.pdf) ![](https://img.shields.io/badge/Nature_Machine_Intelligence-2025-blue)
 * Hierarchical-Task-Aware Multi-modal Mixture of Incremental LoRA Experts for Embodied Continual Learning [[Paper]](https://arxiv.org/pdf/2506.04595) ![](https://img.shields.io/badge/ACL-2025-blue)
 * CLARE: Continual Learning for Vision-Language-Action Models via Autonomous Adapter Routing and Expansion [[Paper]](https://arxiv.org/pdf/2601.09512) [[Code]](https://github.com/utiasDSL/clare) ![](https://img.shields.io/badge/arXiv-2026.01-red)
+* $M^{3}E$: Continual Vision-and-Language Navigation via Mixture of Macro and Micro Experts [[Paper]](https://openreview.net/attachment?id=pFh5ygjN3V&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
+* Lifelong Embodied Navigation Learning [[Paper]](https://openreview.net/attachment?id=PaYo96rjij&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
 
 ### Regularization-based Approaches
 * Online Continual Learning for Interactive Instruction Following Agents [[Paper]](https://arxiv.org/pdf/2403.07548) [[Code]](https://github.com/snumprlab/cl-alfred) ![](https://img.shields.io/badge/ICLR-2024-blue)
