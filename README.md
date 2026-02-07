@@ -26,7 +26,26 @@ The remarkable progress of generative models has equipped AI systems with human-
   * [Continual Learning in Vision-Language Action Model](#continual-learning-in-vision-language-action-model)
   * [Continual Learning in Diffusion Model](#continual-learning-in-diffusion-model)
 
-## Continual Learning in Large Language Model
+## ⚖️ Benchmarks for Continual Learning in Generative Models
+
+### Large Language Model
+* SuperNI Benchmark [[Paper]](https://arxiv.org/pdf/2204.07705)
+* Long Sequence Benchmark [[Paper]](https://arxiv.org/pdf/2301.12314)
+* Standard CL Benchmark [[Paper]](https://proceedings.neurips.cc/paper/2015/file/250cf8b51c773f3f8dc8b4be867a9a02-Paper.pdf)
+
+### Multimodal Large Language Model
+* MCITlib Benchmark [[Paper]](https://arxiv.org/pdf/2508.07307)
+* MLLM-CL Benchmark [[Paper]](https://arxiv.org/pdf/2506.05453)
+* UCIT Benchmark [[Paper]](https://arxiv.org/pdf/2503.12941?)
+* CoIN Benchmark [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/6a45500d9eda640deed90d8a62742be5-Paper-Datasets_and_Benchmarks_Track.pdf)
+
+### Vision-Language Action Model
+* LIBERO [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf)
+
+### Diffusion Model
+* T2I-ConBench [[Paper]](https://arxiv.org/pdf/2505.16875)
+
+## 🔖 Continual Learning in Large Language Model
 
 ### Architecture-based Approaches
 * TreeLoRA: Efficient Continual Learning via Layer-Wise LoRAs Guided by a Hierarchical Gradient-Similarity Tree [[Paper]](https://arxiv.org/pdf/2506.10355?) [[Code]](https://github.com/ZinYY/TreeLoRA) ![](https://img.shields.io/badge/ICML-2025-blue)
@@ -79,7 +98,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Empowering Math Problem Generation and Reasoning for Large Language Model via Synthetic Data based Continual Learning Framework [[Paper]](https://aclanthology.org/2025.emnlp-main.1223.pdf) ![](https://img.shields.io/badge/EMNLP-2025-blue)
 
 
-## Continual Learning in Multimodal Large Language Model
+## 👓 Continual Learning in Multimodal Large Language Model
 
 ### Architecture-based Approaches
 * PCLR: Progressively Compressed LoRA for Multimodal Continual Instruction Tuning [[Paper]](https://openreview.net/attachment?id=WdP1NVSzsz&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
@@ -131,7 +150,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Symbolic Replay: Scene Graph as Prompt for Continual Learning on VQA Task [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/25208) [[Code]](https://github.com/showlab/CLVQA) ![](https://img.shields.io/badge/AAAI-2023-blue)
 * VQACL: A Novel Visual Question Answering Continual Learning Setting [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_VQACL_A_Novel_Visual_Question_Answering_Continual_Learning_Setting_CVPR_2023_paper.pdf) [[Code]](https://github.com/zhangxi1997/VQACL) ![](https://img.shields.io/badge/CVPR-2023-blue)
 
-## Continual Learning in Vision-Language Action Model
+## 🤖 Continual Learning in Vision-Language Action Model
 
 ### Architecture-based Approaches
 * Lifelong Embodied Navigation Learning [[Paper]](https://openreview.net/attachment?id=PaYo96rjij&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
@@ -152,7 +171,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Task-free Lifelong Robot Learning with Retrieval-based Weighted Local Adaptation [[Paper]](https://arxiv.org/pdf/2410.02995) ![](https://img.shields.io/badge/arXiv-2024.10-red)
 * iManip: Skill-Incremental Learning for Robotic Manipulation [[Paper]](https://arxiv.org/pdf/2503.07087) ![](https://img.shields.io/badge/arXiv-2025.03-red)
 
-## Continual Learning in Diffusion Model
+## 🖌️ Continual Learning in Diffusion Model
 
 ### Architecture-based Approaches
 * Bring Your Dreams to Life: Continual Text-to-Video Customization [[Paper]](https://arxiv.org/pdf/2512.05802) [[Code]](https://github.com/JiahuaDong/CCVD) ![](https://img.shields.io/badge/AAAI-2026-blue)
