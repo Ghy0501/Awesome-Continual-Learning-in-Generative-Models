@@ -160,7 +160,7 @@ The remarkable progress of generative models has equipped AI systems with human-
 * Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning [[Paper]](https://www.nature.com/articles/s42256-025-00983-2.pdf) ![](https://img.shields.io/badge/Nature_Machine_Intelligence-2025-blue)
 * QueST: Self-Supervised Skill Abstractions for Learning Continuous Control [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/076c3e48fa502c660902105965fdd9f6-Paper-Conference.pdf) [[Code]](https://quest-model.github.io/) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
 * LOTUS: Continual Imitation Learning for Robot Manipulation Through Unsupervised Skill Discovery [[Paper]](https://arxiv.org/pdf/2311.02058) [[Code]](https://ut-austin-rpl.github.io/Lotus/) ![](https://img.shields.io/badge/ICRA-2024-blue)
-* LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf) [[Code]](https://libero-project.github.io/main.html) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
+* LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf) [[Code]](https://libero-project.github.io/main.html) ![](https://img.shields.io/badge/NeurIPS-2023-blue)
 
 ### Regularization-based Approaches
 * C-NAV: Towards Self-Evolving Continual Object Navigation in Open World [[Paper]](https://arxiv.org/pdf/2510.20685) [[Code]](https://github.com/BigTree765/C-Nav) ![](https://img.shields.io/badge/NeurIPS-2025-blue)
