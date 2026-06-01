@@ -27,6 +27,7 @@ The remarkable progress of generative models has equipped AI systems with human-
   * [Continual Learning in Vision-Language Action Model](#continual-learning-in-vision-language-action-model)
   * [Continual Learning in Diffusion Model](#continual-learning-in-diffusion-model)
 
+
 ## ⚖️ Benchmarks for Continual Learning in Generative Models
 
 ### Large Language Model
@@ -39,6 +40,8 @@ The remarkable progress of generative models has equipped AI systems with human-
 * MLLM-CL Benchmark [[Paper]](https://arxiv.org/pdf/2506.05453)
 * UCIT Benchmark [[Paper]](https://arxiv.org/pdf/2503.12941?)
 * CoIN Benchmark [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/6a45500d9eda640deed90d8a62742be5-Paper-Datasets_and_Benchmarks_Track.pdf)
+* UCo-VQA Benchmark [[Paper]](https://openaccess.thecvf.com/content/CVPR2026/papers/Gao_Re-evaluating_Continual_VQA_Toward_Fair_and_Robust_Evaluation_for_Multimodal_CVPR_2026_paper.pdf) [[Code]](https://github.com/Zi-Jian-Gao/MaDQ)
+* AndroidControl-CL / Android-CL Benchmark [[Paper]](https://openaccess.thecvf.com/content/CVPR2026/papers/Yao_CGL_Advancing_Continual_GUI_Learning_via_Reinforcement_Fine-Tuning_CVPR_2026_paper.pdf)
 
 ### Vision-Language Action Model
 * LIBERO [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf)
@@ -49,145 +52,227 @@ The remarkable progress of generative models has equipped AI systems with human-
 ## 🔖 Continual Learning in Large Language Model
 
 ### Architecture-based Approaches
-* TreeLoRA: Efficient Continual Learning via Layer-Wise LoRAs Guided by a Hierarchical Gradient-Similarity Tree [[Paper]](https://arxiv.org/pdf/2506.10355?) [[Code]](https://github.com/ZinYY/TreeLoRA) ![](https://img.shields.io/badge/ICML-2025-blue)
-* SEE: Continual Fine-tuning with Sequential Ensemble of Experts [[Paper]](https://arxiv.org/pdf/2504.06664) [[Code]](https://github.com/Linzwcs/SEE) ![](https://img.shields.io/badge/ACL_findings-2025-blue)
-* Adaptive Prompting for Continual Relation Extraction: A Within-Task Variance Perspective [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/34616) ![](https://img.shields.io/badge/AAAI-2025-blue)
-* Spurious Forgetting in Continual Learning of Language Models [[Paper]](https://arxiv.org/pdf/2501.13453) [[Code]](https://github.com/zzz47zzz/spurious-forgetting) ![](https://img.shields.io/badge/ICLR-2025-blue)
-* SLIM: Let LLM Learn More and Forget Less with Soft LoRA and Identity Mixture [[Paper]](https://aclanthology.org/2025.naacl-long.246.pdf) ![](https://img.shields.io/badge/NAACL-2025-blue)
-* Q-Tuning: Queue-based Prompt Tuning for Lifelong Few-shot Language Learning [[Paper]](https://arxiv.org/pdf/2404.14607) ![](https://img.shields.io/badge/NAACL_findings-2024-blue)
-* Progressive Prompts: Continual Learning for Language Models [[Paper]](https://arxiv.org/pdf/2301.12314) [[Code]](https://github.com/arazd/ProgressivePrompts) ![](https://img.shields.io/badge/ICLR-2023-blue)
-* Analyzing and Reducing Catastrophic Forgetting in Parameter Efficient Tuning [[Paper]](https://arxiv.org/pdf/2402.18865) [[Code]](https://github.com/which47/LLMCL) ![](https://img.shields.io/badge/arXiv-2024.02-red)
-* MoRAL: MoE Augmented LoRA for LLMs' Lifelong Learning [[Paper]](https://arxiv.org/pdf/2402.11260) ![](https://img.shields.io/badge/arXiv-2024.02-red)
-* SAPT: AShared Attention Framework for Parameter-Efficient Continual Learning of Large Language Models [[Paper]](https://arxiv.org/pdf/2401.08295) [[Code]](https://github.com/circle-hit/SAPT) ![](https://img.shields.io/badge/ACL-2024-blue)
-* Continual Learning in Task-Oriented Dialogue Systems [[Paper]](https://aclanthology.org/2021.emnlp-main.590.pdf) [[Code]](https://github.com/andreamad8/ToDCL) ![](https://img.shields.io/badge/EMNLP-2021-blue)
-* LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently [[Paper]](https://openreview.net/pdf?id=F5PlYMC5ik#:~:text=To%20address%20the%20afore-%20mentioned%20issues%2C%20we%20introduce,to%20effectively%20grow%20their%20capacity%20using%20incremental%20data.) ![](https://img.shields.io/badge/ICLR-2025-blue)
-* Gradient Localization Improves Lifelong Pretraining of Language Models [[Paper]](https://arxiv.org/pdf/2411.04448) ![](https://img.shields.io/badge/arXiv-2024.11-red)
-* Continual Learning for Task-oriented Dialogue System with Iterative Network Pruning, Expanding and Masking [[Paper]](https://arxiv.org/abs/2107.08173) [[Code]](https://github.com/siat-nlp/TPEM) ![](https://img.shields.io/badge/ACL-2021-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [SLIM: Let LLM Learn More and Forget Less with Soft LoRA and Identity Mixture](https://aclanthology.org/2025.naacl-long.246.pdf) | NAACL 2025 | - |
+| [TreeLoRA: Efficient Continual Learning via Layer-Wise LoRAs Guided by a Hierarchical Gradient-Similarity Tree](https://arxiv.org/pdf/2506.10355?) | ICML 2025 | [Code](https://github.com/ZinYY/TreeLoRA) |
+| [Spurious Forgetting in Continual Learning of Language Models](https://arxiv.org/pdf/2501.13453) | ICLR 2025 | [Code](https://github.com/zzz47zzz/spurious-forgetting) |
+| [LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently](https://openreview.net/pdf?id=F5PlYMC5ik#:~:text=To%20address%20the%20afore-%20mentioned%20issues%2C%20we%20introduce,to%20effectively%20grow%20their%20capacity%20using%20incremental%20data.) | ICLR 2025 | - |
+| [SEE: Continual Fine-tuning with Sequential Ensemble of Experts](https://arxiv.org/pdf/2504.06664) | ACL findings 2025 | [Code](https://github.com/Linzwcs/SEE) |
+| [Adaptive Prompting for Continual Relation Extraction: A Within-Task Variance Perspective](https://ojs.aaai.org/index.php/AAAI/article/view/34616) | AAAI 2025 | - |
+| [Gradient Localization Improves Lifelong Pretraining of Language Models](https://arxiv.org/pdf/2411.04448) | arXiv 2024.11 | - |
+| [MoRAL: MoE Augmented LoRA for LLMs' Lifelong Learning](https://arxiv.org/pdf/2402.11260) | arXiv 2024.02 | - |
+| [Analyzing and Reducing Catastrophic Forgetting in Parameter Efficient Tuning](https://arxiv.org/pdf/2402.18865) | arXiv 2024.02 | [Code](https://github.com/which47/LLMCL) |
+| [Q-Tuning: Queue-based Prompt Tuning for Lifelong Few-shot Language Learning](https://arxiv.org/pdf/2404.14607) | NAACL findings 2024 | - |
+| [SAPT: AShared Attention Framework for Parameter-Efficient Continual Learning of Large Language Models](https://arxiv.org/pdf/2401.08295) | ACL 2024 | [Code](https://github.com/circle-hit/SAPT) |
+| [Progressive Prompts: Continual Learning for Language Models](https://arxiv.org/pdf/2301.12314) | ICLR 2023 | [Code](https://github.com/arazd/ProgressivePrompts) |
+| [Continual Learning in Task-Oriented Dialogue Systems](https://aclanthology.org/2021.emnlp-main.590.pdf) | EMNLP 2021 | [Code](https://github.com/andreamad8/ToDCL) |
+| [Continual Learning for Task-oriented Dialogue System with Iterative Network Pruning, Expanding and Masking](https://arxiv.org/abs/2107.08173) | ACL 2021 | [Code](https://github.com/siat-nlp/TPEM) |
 
 ### Regularization-based Approaches
-* Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual Learning [[Paper]](https://openreview.net/attachment?id=vQcyqsGJDw&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
-* Meta-UCF: Unified Task-Conditioned LoRA Generation for Continual Learning in Large Language Models [[Paper]](https://openreview.net/attachment?id=iNg5KL7eTC&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
-* Merge before Forget: A Single LoRA Continual Learning via Continual Merging [[Paper]](https://openreview.net/attachment?id=i1Rj7yU6eF&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
-* Recurrent Knowledge Localization and Fusion for Language Model Continual Learning [[Paper]](https://arxiv.org/pdf/2502.17510) [[Code]](https://github.com/WoodScene/Recurrent_KIF) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Velocitune: A Velocity-based Dynamic Domain Reweighting Method for Continual Pre-training [[Paper]](https://arxiv.org/pdf/2411.14318) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning [[Paper]](https://openreview.net/pdf?id=gc8QAQfXv6) [[Code]](https://github.com/GangweiJiang/FvForgetting) ![](https://img.shields.io/badge/ICLR-2025-blue)
-* Enhancing Contrastive Learning with Noise-Guided Attack: Towards Continual Relation Extraction in the Wild [[Paper]](https://aclanthology.org/2024.acl-long.121.pdf) [[Code]](https://github.com/CuteyThyme/Noisy-CRE) ![](https://img.shields.io/badge/ACL-2024-blue)
-* Large-scale Lifelong Learning of In-context Instructions and How to Tackle It [[Paper]](https://aclanthology.org/2023.acl-long.703.pdf) ![](https://img.shields.io/badge/ACL-2023-blue)
-* TaSL: Continual Dialog State Tracking via Task Skill Localization and Consolidation [[Paper]](https://aclanthology.org/2024.acl-long.69.pdf) [[Code]](https://github.com/WoodScene/TaSL) ![](https://img.shields.io/badge/ACL-2024-blue)
-* SEEKR: Selective Attention-Guided Knowledge Retention for Continual Learning of Large Language Models [[Paper]](https://arxiv.org/pdf/2411.06171) [[Code]](https://github.com/jinghan1he/SEEKR) ![](https://img.shields.io/badge/EMNLP-2024-blue)
-* Continual Learning for Natural Language Generation in Task-oriented Dialog Systems [[Paper]](https://aclanthology.org/2020.findings-emnlp.310.pdf) [[Code]](https://github.com/MiFei/Continual-Learning-for-NLG) ![](https://img.shields.io/badge/EMNLP_findings-2020-blue)
-* Continual Pre-Training of Language Models [[Paper]](https://arxiv.org/pdf/2302.03241) [[Code]](https://github.com/UIC-Liu-Lab/ContinualLM) ![](https://img.shields.io/badge/ICLR-2023-blue)
-* Orthogonal Subspace Learning for Language Model Continual Learning [[Paper]](https://aclanthology.org/2023.findings-emnlp.715.pdf) [[Code]](https://github.com/cmnfriend/O-LoRA) ![](https://img.shields.io/badge/EMNLP_findings-2023-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Sculpting Subspaces: Constrained Full Fine-Tuning in LLMs for Continual Learning](https://openreview.net/attachment?id=vQcyqsGJDw&name=pdf) | ICLR 2026 | - |
+| [Meta-UCF: Unified Task-Conditioned LoRA Generation for Continual Learning in Large Language Models](https://openreview.net/attachment?id=iNg5KL7eTC&name=pdf) | ICLR 2026 | - |
+| [Merge before Forget: A Single LoRA Continual Learning via Continual Merging](https://openreview.net/attachment?id=i1Rj7yU6eF&name=pdf) | ICLR 2026 | - |
+| [Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning](https://openreview.net/pdf?id=gc8QAQfXv6) | ICLR 2025 | [Code](https://github.com/GangweiJiang/FvForgetting) |
+| [Velocitune: A Velocity-based Dynamic Domain Reweighting Method for Continual Pre-training](https://arxiv.org/pdf/2411.14318) | ACL 2025 | - |
+| [Recurrent Knowledge Localization and Fusion for Language Model Continual Learning](https://arxiv.org/pdf/2502.17510) | ACL 2025 | [Code](https://github.com/WoodScene/Recurrent_KIF) |
+| [SEEKR: Selective Attention-Guided Knowledge Retention for Continual Learning of Large Language Models](https://arxiv.org/pdf/2411.06171) | EMNLP 2024 | [Code](https://github.com/jinghan1he/SEEKR) |
+| [TaSL: Continual Dialog State Tracking via Task Skill Localization and Consolidation](https://aclanthology.org/2024.acl-long.69.pdf) | ACL 2024 | [Code](https://github.com/WoodScene/TaSL) |
+| [Enhancing Contrastive Learning with Noise-Guided Attack: Towards Continual Relation Extraction in the Wild](https://aclanthology.org/2024.acl-long.121.pdf) | ACL 2024 | [Code](https://github.com/CuteyThyme/Noisy-CRE) |
+| [Continual Pre-Training of Language Models](https://arxiv.org/pdf/2302.03241) | ICLR 2023 | [Code](https://github.com/UIC-Liu-Lab/ContinualLM) |
+| [Orthogonal Subspace Learning for Language Model Continual Learning](https://aclanthology.org/2023.findings-emnlp.715.pdf) | EMNLP findings 2023 | [Code](https://github.com/cmnfriend/O-LoRA) |
+| [Large-scale Lifelong Learning of In-context Instructions and How to Tackle It](https://aclanthology.org/2023.acl-long.703.pdf) | ACL 2023 | - |
+| [Continual Learning for Natural Language Generation in Task-oriented Dialog Systems](https://aclanthology.org/2020.findings-emnlp.310.pdf) | EMNLP findings 2020 | [Code](https://github.com/MiFei/Continual-Learning-for-NLG) |
 
 ### Replay-based Approaches
-* Fine-tuned Language Models are Continual Learners [[Paper]](https://aclanthology.org/2022.emnlp-main.410.pdf) [[Code]](https://github.com/ThomasScialom/T0_continual_learning) ![](https://img.shields.io/badge/EMNLP-2022-blue)
-* Towards Practical Tool Usage for Continually Learning LLMs [[Paper]](https://arxiv.org/pdf/2404.09339) ![](https://img.shields.io/badge/arXiv-2024.04-red)
-* Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction [[Paper]](https://aclanthology.org/2025.naacl-long.205.pdf) ![](https://img.shields.io/badge/NAACL-2025-blue)
-* InsCL: A Data-efficient Continual Learning Paradigm for Fine-tuning Large Language Models with Instructions [[Paper]](https://aclanthology.org/2024.naacl-long.37.pdf) [[Code]](https://github.com/OPPO-Mente-Lab/InsCL) ![](https://img.shields.io/badge/NAACL-2024-blue)
-* Overcoming Catastrophic Forgetting by Exemplar Selection in Task-oriented Dialogue System [[Paper]](https://aclanthology.org/2024.findings-acl.5.pdf) ![](https://img.shields.io/badge/ACL_findings-2024-blue)
-* Reviving Dormant Memories: Investigating Catastrophic Forgetting in Language Models through Rationale-Guidance Difficulty [[Paper]](https://arxiv.org/pdf/2411.11932) [[Code]](https://github.com/DIRECT-BIT/Reviving-Dormant-Memories) ![](https://img.shields.io/badge/arXiv-2024.11-red)
-* D-CPT Law: Domain-specific Continual Pre-Training Scaling Law for Large Language Models [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/a4628e9fbd3002a554923642f74d5d6b-Paper-Conference.pdf) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
-* LAMOL: LAnguage MOdeling for Lifelong Language Learning [[Paper]](https://arxiv.org/pdf/1909.03329) [[Code]](https://github.com/chho33/LAMOL) ![](https://img.shields.io/badge/ICLR-2020-blue)
-* Generative Replay Inspired by Hippocampal Memory Indexing for Continual Language Learning [[Paper]](https://aclanthology.org/2023.eacl-main.65.pdf) [[Code]](https://github.com/arumaekawa/GR-HMI) ![](https://img.shields.io/badge/EACL-2023-blue)
-* Prompt Conditioned VAE: Enhancing Generative Replay for Lifelong Learning in Task-Oriented Dialogue [[Paper]](https://aclanthology.org/2022.emnlp-main.766.pdf) [[Code]](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/pcll) ![](https://img.shields.io/badge/EMNLP-2022-blue)
-* Continual Learning with Dirichlet Generative-based Rehearsal [[Paper]](https://arxiv.org/pdf/2309.06917) ![](https://img.shields.io/badge/arXiv-2023.09-red)
-* Mitigating catastrophic forgetting in large language models with self-synthesized rehearsal [[Paper]](https://aclanthology.org/2024.acl-long.77.pdf) [[Code]](https://github.com/DeepLearnXMU/SSR) ![](https://img.shields.io/badge/ACL-2024-blue)
-* Towards Effective and Efficient Continual Pre-training of Large Language Models [[Paper]](https://arxiv.org/pdf/2407.18743) [[Code]](https://github.com/RUC-GSAI/Llama-3-SynE) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Don't Half-listen: Capturing Key-part Information in Continual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2403.10056) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Efficient Domain Continual pretraining by Mitigating the Stability Gap [[Paper]](https://arxiv.org/pdf/2406.14833) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Data-Efficient Selection via Grammatical Complexity in Continual Pre-training of Domain-Specific LLMs [[Paper]](https://aclanthology.org/2025.emnlp-main.1121.pdf) [[Code]](https://github.com/PPMark0712/CDF-GC) ![](https://img.shields.io/badge/EMNLP-2025-blue)
-* Empowering Math Problem Generation and Reasoning for Large Language Model via Synthetic Data based Continual Learning Framework [[Paper]](https://aclanthology.org/2025.emnlp-main.1223.pdf) ![](https://img.shields.io/badge/EMNLP-2025-blue)
 
+| Paper | Venue | Code |
+|---|---:|---|
+| [Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction](https://aclanthology.org/2025.naacl-long.205.pdf) | NAACL 2025 | - |
+| [Empowering Math Problem Generation and Reasoning for Large Language Model via Synthetic Data based Continual Learning Framework](https://aclanthology.org/2025.emnlp-main.1223.pdf) | EMNLP 2025 | - |
+| [Data-Efficient Selection via Grammatical Complexity in Continual Pre-training of Domain-Specific LLMs](https://aclanthology.org/2025.emnlp-main.1121.pdf) | EMNLP 2025 | [Code](https://github.com/PPMark0712/CDF-GC) |
+| [Towards Effective and Efficient Continual Pre-training of Large Language Models](https://arxiv.org/pdf/2407.18743) | ACL 2025 | [Code](https://github.com/RUC-GSAI/Llama-3-SynE) |
+| [Efficient Domain Continual pretraining by Mitigating the Stability Gap](https://arxiv.org/pdf/2406.14833) | ACL 2025 | - |
+| [Don't Half-listen: Capturing Key-part Information in Continual Instruction Tuning](https://arxiv.org/pdf/2403.10056) | ACL 2025 | - |
+| [Reviving Dormant Memories: Investigating Catastrophic Forgetting in Language Models through Rationale-Guidance Difficulty](https://arxiv.org/pdf/2411.11932) | arXiv 2024.11 | [Code](https://github.com/DIRECT-BIT/Reviving-Dormant-Memories) |
+| [Towards Practical Tool Usage for Continually Learning LLMs](https://arxiv.org/pdf/2404.09339) | arXiv 2024.04 | - |
+| [D-CPT Law: Domain-specific Continual Pre-Training Scaling Law for Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2024/file/a4628e9fbd3002a554923642f74d5d6b-Paper-Conference.pdf) | NeurIPS 2024 | - |
+| [InsCL: A Data-efficient Continual Learning Paradigm for Fine-tuning Large Language Models with Instructions](https://aclanthology.org/2024.naacl-long.37.pdf) | NAACL 2024 | [Code](https://github.com/OPPO-Mente-Lab/InsCL) |
+| [Overcoming Catastrophic Forgetting by Exemplar Selection in Task-oriented Dialogue System](https://aclanthology.org/2024.findings-acl.5.pdf) | ACL findings 2024 | - |
+| [Mitigating catastrophic forgetting in large language models with self-synthesized rehearsal](https://aclanthology.org/2024.acl-long.77.pdf) | ACL 2024 | [Code](https://github.com/DeepLearnXMU/SSR) |
+| [Continual Learning with Dirichlet Generative-based Rehearsal](https://arxiv.org/pdf/2309.06917) | arXiv 2023.09 | - |
+| [Generative Replay Inspired by Hippocampal Memory Indexing for Continual Language Learning](https://aclanthology.org/2023.eacl-main.65.pdf) | EACL 2023 | [Code](https://github.com/arumaekawa/GR-HMI) |
+| [Prompt Conditioned VAE: Enhancing Generative Replay for Lifelong Learning in Task-Oriented Dialogue](https://aclanthology.org/2022.emnlp-main.766.pdf) | EMNLP 2022 | [Code](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/pcll) |
+| [Fine-tuned Language Models are Continual Learners](https://aclanthology.org/2022.emnlp-main.410.pdf) | EMNLP 2022 | [Code](https://github.com/ThomasScialom/T0_continual_learning) |
+| [LAMOL: LAnguage MOdeling for Lifelong Language Learning](https://arxiv.org/pdf/1909.03329) | ICLR 2020 | [Code](https://github.com/chho33/LAMOL) |
+
+### RL / RFT-based Approaches
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Self-Distillation Enables Continual Learning](https://arxiv.org/abs/2601.19897) | ICML 2026 | [Code](http://idanshenfeld.com/SDFT) |
 
 ## 👓 Continual Learning in Multimodal Large Language Model
 
 ### Architecture-based Approaches
-* PCLR: Progressively Compressed LoRA for Multimodal Continual Instruction Tuning [[Paper]](https://openreview.net/attachment?id=WdP1NVSzsz&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
-* LoRA in LoRA: Towards Parameter-Efficient Architecture Expansionfor Continual Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2508.06202) ![](https://img.shields.io/badge/AAAI-2026-blue)
-* ModalPrompt: Dual-Modality Guided Prompt for Continual Learning of Large Multimodal Models [[Paper]](https://arxiv.org/pdf/2410.05849) ![](https://img.shields.io/badge/EMNLP-2025-blue)
-* Federated Continual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2503.12897) [[Code]](https://github.com/Ghy0501/FCIT) ![](https://img.shields.io/badge/ICCV-2025-blue)
-* SMoLoRA: Exploring and Defying Dual Catastrophic Forgetting in Continual Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2411.13949) [[Code]](https://github.com/Minato-Zackie/SMoLoRA) ![](https://img.shields.io/badge/ICCV-2025-blue)
-* CL-MoE: Enhancing Multimodal Large Language Model with Dual Momentum Mixture-of-Experts for Continual Visual Question Answering [[Paper]](https://arxiv.org/pdf/2503.00413?) [[Code]](https://github.com/ECNU-ICALK/CL-MoE) ![](https://img.shields.io/badge/CVPR-2025-blue)
-* HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model [[Paper]](https://arxiv.org/pdf/2503.12941?) [[Code]](https://github.com/Ghy0501/HiDe-LLaVA) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Progressive LoRA for Multimodal Continual Instruction Tuning [[Paper]](https://aclanthology.org/2025.findings-acl.143.pdf) [[Code]](https://github.com/ku-nlp/ProgLoRA) ![](https://img.shields.io/badge/ACL_findings-2025-blue)
-* Enhancing Multimodal Continual Instruction Tuning with BranchLoRA [[Paper]](https://arxiv.org/pdf/2506.02041) [[Code]](https://github.com/BladeDancer957/BranchLoRA) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Large Continual Instruction Assistant [[Paper]](https://arxiv.org/pdf/2410.10868) [[Code]](https://github.com/JingyangQiao/CoIN) ![](https://img.shields.io/badge/ICML-2025-blue)
-* Dynamic Mixture of Curriculum LoRA Experts for Continual Multimodal Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.11672) [[Code]](https://github.com/gcd19/D-MoLE) ![](https://img.shields.io/badge/ICML-2025-blue)
-* CoIN: A Benchmark of Continual Instruction Tuning for Multimodal Large Language Models [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/6a45500d9eda640deed90d8a62742be5-Paper-Datasets_and_Benchmarks_Track.pdf) [[Code]](https://github.com/zackschen/CoIN) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
-* Task-Attentive Transformer Architecture for Continual Learning of Vision-and-Language Tasks Using Knowledge Distillation [[Paper]](https://aclanthology.org/2023.findings-emnlp.466.pdf) [[Code]](https://github.com/YuliangCai2022/TAMCL.git.) ![](https://img.shields.io/badge/EMNLP_findings-2023-blue)
-* LLaVA-CMoE: Towards Continual Mixture of Experts for Large Vision-Language Models [[Paper]](https://arxiv.org/pdf/2503.21227) ![](https://img.shields.io/badge/arXiv-2025.03-red)
-* MLLM-CL: Continual Learning for Multimodal Large Language Models [[Paper]](https://arxiv.org/pdf/2506.05453) [[Code]](https://github.com/bjzhb666/MLLM-CL) ![](https://img.shields.io/badge/arXiv-2025.06-red)
-* Continual LLaVA: Continual Instruction Tuning in Large Vision-Language Models [[Paper]](https://arxiv.org/pdf/2411.02564) [[Code]](https://github.com/mengcaopku/Continual-LLaVA) ![](https://img.shields.io/badge/arXiv-2024.11-red)
-* Clumo: Cluster-based Modality Fusion Prompt for Continual Learning in Visual Question Answering [[Paper]](https://arxiv.org/pdf/2408.11742?) ![](https://img.shields.io/badge/arXiv-2024.08-red)
-* Empowering Large Language Model for Continual Video Question Answering with Collaborative Prompting [[Paper]](https://aclanthology.org/2024.emnlp-main.227.pdf) [[Code]](https://github.com/caicch/ColPro) ![](https://img.shields.io/badge/EMNLP-2024-blue)
-* Beyond Anti-Forgetting: Multimodal Continual Instruction Tuning with Positive Forward Transfer [[Paper]](https://arxiv.org/pdf/2401.09181) ![](https://img.shields.io/badge/arXiv-2024.01-red)
-* Decouple Before Interact: Multi-Modal Prompt Learning for Continual Visual Question Answering [[Paper]](https://openaccess.thecvf.com/content/ICCV2023/papers/Qian_Decouple_Before_Interact_Multi-Modal_Prompt_Learning_for_Continual_Visual_Question_ICCV_2023_paper.pdf) ![](https://img.shields.io/badge/CVPR-2023-blue)
-* Continual Instruction Tuning for Large Multimodal Models [[Paper]](https://arxiv.org/pdf/2311.16206) ![](https://img.shields.io/badge/arXiv-2023.11-red)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [SAME: Stabilized Mixture-of-Experts for Multimodal Continual Instruction Tuning](https://coale.science/storage/pdfs/edca0013-77ab-4266-90e1-582c2d1f12cb.pdf) | ICML 2026 | - |
+| [PCLR: Progressively Compressed LoRA for Multimodal Continual Instruction Tuning](https://openreview.net/attachment?id=WdP1NVSzsz&name=pdf) | ICLR 2026 | - |
+| [On Token's Dilemma: Dynamic MoE with Drift-Aware Token Assignment for Continual Learning of Large Vision Language Models](https://arxiv.org/abs/2603.27481) | CVPR 2026 | - |
+| [LoRA in LoRA: Towards Parameter-Efficient Architecture Expansionfor Continual Visual Instruction Tuning](https://arxiv.org/pdf/2508.06202) | AAAI 2026 | - |
+| [MLLM-CL: Continual Learning for Multimodal Large Language Models](https://arxiv.org/pdf/2506.05453) | arXiv 2025.06 | [Code](https://github.com/bjzhb666/MLLM-CL) |
+| [LLaVA-CMoE: Towards Continual Mixture of Experts for Large Vision-Language Models](https://arxiv.org/pdf/2503.21227) | arXiv 2025.03 | - |
+| [Large Continual Instruction Assistant](https://arxiv.org/pdf/2410.10868) | ICML 2025 | [Code](https://github.com/JingyangQiao/CoIN) |
+| [Dynamic Mixture of Curriculum LoRA Experts for Continual Multimodal Instruction Tuning](https://arxiv.org/pdf/2506.11672) | ICML 2025 | [Code](https://github.com/gcd19/D-MoLE) |
+| [SMoLoRA: Exploring and Defying Dual Catastrophic Forgetting in Continual Visual Instruction Tuning](https://arxiv.org/pdf/2411.13949) | ICCV 2025 | [Code](https://github.com/Minato-Zackie/SMoLoRA) |
+| [Federated Continual Instruction Tuning](https://arxiv.org/pdf/2503.12897) | ICCV 2025 | [Code](https://github.com/Ghy0501/FCIT) |
+| [ModalPrompt: Dual-Modality Guided Prompt for Continual Learning of Large Multimodal Models](https://arxiv.org/pdf/2410.05849) | EMNLP 2025 | - |
+| [CL-MoE: Enhancing Multimodal Large Language Model with Dual Momentum Mixture-of-Experts for Continual Visual Question Answering](https://arxiv.org/pdf/2503.00413?) | CVPR 2025 | [Code](https://github.com/ECNU-ICALK/CL-MoE) |
+| [Progressive LoRA for Multimodal Continual Instruction Tuning](https://aclanthology.org/2025.findings-acl.143.pdf) | ACL findings 2025 | [Code](https://github.com/ku-nlp/ProgLoRA) |
+| [HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model](https://arxiv.org/pdf/2503.12941?) | ACL 2025 | [Code](https://github.com/Ghy0501/HiDe-LLaVA) |
+| [Enhancing Multimodal Continual Instruction Tuning with BranchLoRA](https://arxiv.org/pdf/2506.02041) | ACL 2025 | [Code](https://github.com/BladeDancer957/BranchLoRA) |
+| [Continual LLaVA: Continual Instruction Tuning in Large Vision-Language Models](https://arxiv.org/pdf/2411.02564) | arXiv 2024.11 | [Code](https://github.com/mengcaopku/Continual-LLaVA) |
+| [Clumo: Cluster-based Modality Fusion Prompt for Continual Learning in Visual Question Answering](https://arxiv.org/pdf/2408.11742?) | arXiv 2024.08 | - |
+| [Beyond Anti-Forgetting: Multimodal Continual Instruction Tuning with Positive Forward Transfer](https://arxiv.org/pdf/2401.09181) | arXiv 2024.01 | - |
+| [CoIN: A Benchmark of Continual Instruction Tuning for Multimodal Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2024/file/6a45500d9eda640deed90d8a62742be5-Paper-Datasets_and_Benchmarks_Track.pdf) | NeurIPS 2024 | [Code](https://github.com/zackschen/CoIN) |
+| [Empowering Large Language Model for Continual Video Question Answering with Collaborative Prompting](https://aclanthology.org/2024.emnlp-main.227.pdf) | EMNLP 2024 | [Code](https://github.com/caicch/ColPro) |
+| [Continual Instruction Tuning for Large Multimodal Models](https://arxiv.org/pdf/2311.16206) | arXiv 2023.11 | - |
+| [Task-Attentive Transformer Architecture for Continual Learning of Vision-and-Language Tasks Using Knowledge Distillation](https://aclanthology.org/2023.findings-emnlp.466.pdf) | EMNLP findings 2023 | [Code](https://github.com/YuliangCai2022/TAMCL.git.) |
+| [Decouple Before Interact: Multi-Modal Prompt Learning for Continual Visual Question Answering](https://openaccess.thecvf.com/content/ICCV2023/papers/Qian_Decouple_Before_Interact_Multi-Modal_Prompt_Learning_for_Continual_Visual_Question_ICCV_2023_paper.pdf) | CVPR 2023 | - |
 
 ### Regularization-based Approaches
-* KeepLoRA: Continual Learning with Residual Gradient Adaptation [[Paper]](https://openreview.net/attachment?id=T3Vc5fkTzV&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
-* Multimodal Continual Instruction Tuning with Dynamic Gradient Guidance [[Paper]](https://arxiv.org/pdf/2511.15164) ![](https://img.shields.io/badge/arXiv-2025.11-red)
-* Harmonious Parameter Adaptation in Continual Visual Instruction Tuning for Safety-Aligned MLLMs [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
-* No Images, No Problem: Retaining Knowledge in Continual VQA with Questions-Only Memory [[Paper]](https://arxiv.org/pdf/2502.04469) [[Code]](https://github.com/IemProg/QUAD) ![](https://img.shields.io/badge/ICCV-2025-blue)
-* Bisecle: Binding and Separation in Continual Learning for Video Language Understanding [[Paper]](https://arxiv.org/pdf/2507.00469) [[Code]](https://github.com/cruiseresearchgroup/Bisecle) ![](https://img.shields.io/badge/NeruIPS-2025-blue)
-* LLaVA-c: Continual Improved Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.08666) ![](https://img.shields.io/badge/arXiv-2025.06-red)
-* LoRASculpt: Sculpting LoRA for Harmonizing General and Specialized Knowledge in Multimodal Large Language Models [[Paper]](https://arxiv.org/pdf/2503.16843) [[Code]](https://github.com/LiangJian24/LoRASculpt) ![](https://img.shields.io/badge/CVPR-2025-blue)
-* SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2505.02486?) [[Code]](https://github.com/jinpeng0528/SEFE/) ![](https://img.shields.io/badge/ICML-2025-blue)
-* Learn from Downstream and Be Yourself in Multimodal Large Language Model Fine-Tuning [[Paper]](https://arxiv.org/pdf/2411.10928) ![](https://img.shields.io/badge/ICML-2025-blue)
-* Model Tailor: Mitigating Catastrophic Forgetting in Multi-modal Large Language Models [[Paper]](https://arxiv.org/pdf/2402.12048) [[Code]](https://github.com/didizhu-zju/Model-Tailor) ![](https://img.shields.io/badge/ICML-2024-blue)
-* Modality-Inconsistent Continual Learning of Multimodal Large Language Models [[Paper]](https://arxiv.org/pdf/2412.13050) ![](https://img.shields.io/badge/arXiv-2024.12-red)
-* Enhancing Continual Learning in Visual Question Answering with Modality-Aware Feature Distillation [[Paper]](https://arxiv.org/pdf/2406.19297) ![](https://img.shields.io/badge/arXiv-2024.06-red)
-* Continual Audio-Visual Sound Separation [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/8af52d7acc4f0013661d4223d7e12b4c-Paper-Conference.pdf) [[Code]](https://github.com/weiguoPian/ContAV-Sep_NeurIPS2024) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
-* LLM-Assisted Multi-Teacher Continual Learning for Visual Question Answering in Robotic Surgery [[Paper]](https://arxiv.org/pdf/2402.16664) ![](https://img.shields.io/badge/ICRA-2024-blue)
-* Revisiting Distillation for Continual Learning on Visual Question Localized-Answering in Robotic Surgery [[Paper]](https://arxiv.org/pdf/2307.12045) [[Code]](https://github.com/longbai1006/CS-VQLA) ![](https://img.shields.io/badge/MICCAI-2023-blue)
-* Multi-Domain Lifelong Visual Question Answering via Self-Critical Distillation [[Paper]](https://dl.acm.org/doi/pdf/10.1145/3581783.3612121) ![](https://img.shields.io/badge/ACMMM-2023-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Multimodal Continual Instruction Tuning with Dynamic Gradient Guidance](https://arxiv.org/abs/2511.15164) | ICML 2026 | [Code](https://github.com/lisongze/DGG) |
+| [KeepLoRA: Continual Learning with Residual Gradient Adaptation](https://openreview.net/attachment?id=T3Vc5fkTzV&name=pdf) | ICLR 2026 | - |
+| [Octopus: History-Free Gradient Orthogonalization for Continual Learning in Multimodal Large Language Models](https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_Octopus_History-Free_Gradient_Orthogonalization_for_Continual_Learning_in_Multimodal_Large_CVPR_2026_paper.pdf) | CVPR 2026 | - |
+| [LLaVA-c: Continual Improved Visual Instruction Tuning](https://arxiv.org/pdf/2506.08666) | arXiv 2025.06 | - |
+| [Bisecle: Binding and Separation in Continual Learning for Video Language Understanding](https://arxiv.org/pdf/2507.00469) | NeruIPS 2025 | [Code](https://github.com/cruiseresearchgroup/Bisecle) |
+| [SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning](https://arxiv.org/pdf/2505.02486?) | ICML 2025 | [Code](https://github.com/jinpeng0528/SEFE/) |
+| [Learn from Downstream and Be Yourself in Multimodal Large Language Model Fine-Tuning](https://arxiv.org/pdf/2411.10928) | ICML 2025 | - |
+| [No Images, No Problem: Retaining Knowledge in Continual VQA with Questions-Only Memory](https://arxiv.org/pdf/2502.04469) | ICCV 2025 | [Code](https://github.com/IemProg/QUAD) |
+| [LoRASculpt: Sculpting LoRA for Harmonizing General and Specialized Knowledge in Multimodal Large Language Models](https://arxiv.org/pdf/2503.16843) | CVPR 2025 | [Code](https://github.com/LiangJian24/LoRASculpt) |
+| [Modality-Inconsistent Continual Learning of Multimodal Large Language Models](https://arxiv.org/pdf/2412.13050) | arXiv 2024.12 | - |
+| [Enhancing Continual Learning in Visual Question Answering with Modality-Aware Feature Distillation](https://arxiv.org/pdf/2406.19297) | arXiv 2024.06 | - |
+| [Continual Audio-Visual Sound Separation](https://proceedings.neurips.cc/paper_files/paper/2024/file/8af52d7acc4f0013661d4223d7e12b4c-Paper-Conference.pdf) | NeurIPS 2024 | [Code](https://github.com/weiguoPian/ContAV-Sep_NeurIPS2024) |
+| [LLM-Assisted Multi-Teacher Continual Learning for Visual Question Answering in Robotic Surgery](https://arxiv.org/pdf/2402.16664) | ICRA 2024 | - |
+| [Model Tailor: Mitigating Catastrophic Forgetting in Multi-modal Large Language Models](https://arxiv.org/pdf/2402.12048) | ICML 2024 | [Code](https://github.com/didizhu-zju/Model-Tailor) |
+| [Revisiting Distillation for Continual Learning on Visual Question Localized-Answering in Robotic Surgery](https://arxiv.org/pdf/2307.12045) | MICCAI 2023 | [Code](https://github.com/longbai1006/CS-VQLA) |
+| [Multi-Domain Lifelong Visual Question Answering via Self-Critical Distillation](https://dl.acm.org/doi/pdf/10.1145/3581783.3612121) | ACMMM 2023 | - |
 
 ### Replay-based Approaches
-* Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs [[Paper]](https://arxiv.org/pdf/2511.20158) ![](https://img.shields.io/badge/arXiv-2025.11-red)
-* OASIS: Online Sample Selection for Continual Visual Instruction Tuning [[Paper]](https://arxiv.org/pdf/2506.02011?) ![](https://img.shields.io/badge/arXiv-2025.06-red)
-* Adapt-∞: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection [[Paper]](https://arxiv.org/pdf/2410.10636v1) [[Code]](https://github.com/adymaharana/adapt-inf) ![](https://img.shields.io/badge/ICLR-2025-blue)
-* VLM-Assisted Continual learning for Visual Question Answering in Self-Driving [[Paper]](https://arxiv.org/pdf/2502.00843) ![](https://img.shields.io/badge/arXiv-2025.02-red)
-* Multi-Prototype Grouping for Continual Learning in Visual Question Answering [[Paper]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10890400) ![](https://img.shields.io/badge/ICASSP-2025-blue)
-* Symbolic Replay: Scene Graph as Prompt for Continual Learning on VQA Task [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/25208) [[Code]](https://github.com/showlab/CLVQA) ![](https://img.shields.io/badge/AAAI-2023-blue)
-* VQACL: A Novel Visual Question Answering Continual Learning Setting [[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_VQACL_A_Novel_Visual_Question_Answering_Continual_Learning_Setting_CVPR_2023_paper.pdf) [[Code]](https://github.com/zhangxi1997/VQACL) ![](https://img.shields.io/badge/CVPR-2023-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [OASIS: Online Sample Selection for Continual Visual Instruction Tuning](https://arxiv.org/pdf/2506.02011?) | arXiv 2025.06 | - |
+| [VLM-Assisted Continual learning for Visual Question Answering in Self-Driving](https://arxiv.org/pdf/2502.00843) | arXiv 2025.02 | - |
+| [Adapt-∞: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection](https://arxiv.org/pdf/2410.10636v1) | ICLR 2025 | [Code](https://github.com/adymaharana/adapt-inf) |
+| [Multi-Prototype Grouping for Continual Learning in Visual Question Answering](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10890400) | ICASSP 2025 | - |
+| [VQACL: A Novel Visual Question Answering Continual Learning Setting](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_VQACL_A_Novel_Visual_Question_Answering_Continual_Learning_Setting_CVPR_2023_paper.pdf) | CVPR 2023 | [Code](https://github.com/zhangxi1997/VQACL) |
+| [Symbolic Replay: Scene Graph as Prompt for Continual Learning on VQA Task](https://ojs.aaai.org/index.php/AAAI/article/view/25208) | AAAI 2023 | [Code](https://github.com/showlab/CLVQA) |
+
+### Preference-Optimization-based Approaches
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [phi-DPO: Fairness Direct Preference Optimization Approach to Continual Learning in Large Multimodal Models](https://arxiv.org/abs/2602.22601) | CVPR 2026 | [Code](https://github.com/uark-cviu/FaiDPO) |
+
+### RL / RFT-based Approaches
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Reinforcement Fine-Tuning Naturally Mitigates Forgetting in Continual Post-Training](https://arxiv.org/abs/2507.05386) | ICML 2026 | [Code](https://github.com/zhhvvv/rft_vs_sft) |
+| [Continual GUI Agents](https://arxiv.org/abs/2601.20732) | ICML 2026 | [Code](https://github.com/Seconds123/GUI-AiF) |
+| [CGL: Advancing Continual GUI Learning via Reinforcement Fine-Tuning](https://openaccess.thecvf.com/content/CVPR2026/papers/Yao_CGL_Advancing_Continual_GUI_Learning_via_Reinforcement_Fine-Tuning_CVPR_2026_paper.pdf) | CVPR 2026 | - |
+
+### Evaluation / Benchmark
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Re-evaluating Continual VQA: Toward Fair and Robust Evaluation for Multimodal Continual Learning](https://openaccess.thecvf.com/content/CVPR2026/papers/Gao_Re-evaluating_Continual_VQA_Toward_Fair_and_Robust_Evaluation_for_Multimodal_CVPR_2026_paper.pdf) | CVPR 2026 | [Code](https://github.com/Zi-Jian-Gao/MaDQ) |
+
+### Knowledge / Safety Retention
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [KORE: Enhancing Knowledge Injection for Large Multimodal Models via Knowledge-Oriented Controls](https://arxiv.org/abs/2510.19316) | ICML 2026 | - |
+| [Harmonious Parameter Adaptation in Continual Visual Instruction Tuning for Safety-Aligned MLLMs](https://arxiv.org/abs/2511.20158) | ICML 2026 | - |
+
+### Video-Language Continual Learning
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Affordance-First Decomposition for Continual Learning in Video-Language Understanding](https://arxiv.org/abs/2512.00694) | ICML 2026 | - |
 
 ## 🤖 Continual Learning in Vision-Language Action Model
 
 ### Architecture-based Approaches
-* Lifelong Embodied Navigation Learning [[Paper]](https://openreview.net/attachment?id=PaYo96rjij&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
-* $M^{3}E$: Continual Vision-and-Language Navigation via Mixture of Macro and Micro Experts [[Paper]](https://openreview.net/attachment?id=pFh5ygjN3V&name=pdf) ![](https://img.shields.io/badge/ICLR-2026-blue)
-* CLARE: Continual Learning for Vision-Language-Action Models via Autonomous Adapter Routing and Expansion [[Paper]](https://arxiv.org/pdf/2601.09512) [[Code]](https://github.com/utiasDSL/clare) ![](https://img.shields.io/badge/arXiv-2026.01-red)
-* Hierarchical-Task-Aware Multi-modal Mixture of Incremental LoRA Experts for Embodied Continual Learning [[Paper]](https://arxiv.org/pdf/2506.04595) ![](https://img.shields.io/badge/ACL-2025-blue)
-* Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning [[Paper]](https://www.nature.com/articles/s42256-025-00983-2.pdf) ![](https://img.shields.io/badge/Nature_Machine_Intelligence-2025-blue)
-* QueST: Self-Supervised Skill Abstractions for Learning Continuous Control [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/076c3e48fa502c660902105965fdd9f6-Paper-Conference.pdf) [[Code]](https://quest-model.github.io/) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
-* LOTUS: Continual Imitation Learning for Robot Manipulation Through Unsupervised Skill Discovery [[Paper]](https://arxiv.org/pdf/2311.02058) [[Code]](https://ut-austin-rpl.github.io/Lotus/) ![](https://img.shields.io/badge/ICRA-2024-blue)
-* LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf) [[Code]](https://libero-project.github.io/main.html) ![](https://img.shields.io/badge/NeurIPS-2023-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [CLARE: Continual Learning for Vision-Language-Action Models via Autonomous Adapter Routing and Expansion](https://arxiv.org/pdf/2601.09512) | arXiv 2026.01 | [Code](https://github.com/utiasDSL/clare) |
+| [Lifelong Embodied Navigation Learning](https://openreview.net/attachment?id=PaYo96rjij&name=pdf) | ICLR 2026 | - |
+| [$M^{3}E$: Continual Vision-and-Language Navigation via Mixture of Macro and Micro Experts](https://openreview.net/attachment?id=pFh5ygjN3V&name=pdf) | ICLR 2026 | - |
+| [Preserving and Combining Knowledge in Robotic Lifelong Reinforcement Learning](https://www.nature.com/articles/s42256-025-00983-2.pdf) | Nature Machine Intelligence 2025 | - |
+| [Hierarchical-Task-Aware Multi-modal Mixture of Incremental LoRA Experts for Embodied Continual Learning](https://arxiv.org/pdf/2506.04595) | ACL 2025 | - |
+| [QueST: Self-Supervised Skill Abstractions for Learning Continuous Control](https://proceedings.neurips.cc/paper_files/paper/2024/file/076c3e48fa502c660902105965fdd9f6-Paper-Conference.pdf) | NeurIPS 2024 | [Code](https://quest-model.github.io/) |
+| [LOTUS: Continual Imitation Learning for Robot Manipulation Through Unsupervised Skill Discovery](https://arxiv.org/pdf/2311.02058) | ICRA 2024 | [Code](https://ut-austin-rpl.github.io/Lotus/) |
+| [LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning](https://proceedings.neurips.cc/paper_files/paper/2023/file/8c3c666820ea055a77726d66fc7d447f-Paper-Datasets_and_Benchmarks.pdf) | NeurIPS 2023 | [Code](https://libero-project.github.io/main.html) |
 
 ### Regularization-based Approaches
-* C-NAV: Towards Self-Evolving Continual Object Navigation in Open World [[Paper]](https://arxiv.org/pdf/2510.20685) [[Code]](https://github.com/BigTree765/C-Nav) ![](https://img.shields.io/badge/NeurIPS-2025-blue)
-* M2Distill: Multi-Modal Distillation for Lifelong Imitation Learning [[Paper]](https://arxiv.org/pdf/2410.00064?) ![](https://img.shields.io/badge/arXiv-2024.10-red)
-* Online Continual Learning for Interactive Instruction Following Agents [[Paper]](https://arxiv.org/pdf/2403.07548) [[Code]](https://github.com/snumprlab/cl-alfred) ![](https://img.shields.io/badge/ICLR-2024-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [C-NAV: Towards Self-Evolving Continual Object Navigation in Open World](https://arxiv.org/pdf/2510.20685) | NeurIPS 2025 | [Code](https://github.com/BigTree765/C-Nav) |
+| [M2Distill: Multi-Modal Distillation for Lifelong Imitation Learning](https://arxiv.org/pdf/2410.00064?) | arXiv 2024.10 | - |
+| [Online Continual Learning for Interactive Instruction Following Agents](https://arxiv.org/pdf/2403.07548) | ICLR 2024 | [Code](https://github.com/snumprlab/cl-alfred) |
 
 ### Replay-based Approaches
-* Task-free Lifelong Robot Learning with Retrieval-based Weighted Local Adaptation [[Paper]](https://arxiv.org/pdf/2410.02995) ![](https://img.shields.io/badge/arXiv-2024.10-red)
-* iManip: Skill-Incremental Learning for Robotic Manipulation [[Paper]](https://arxiv.org/pdf/2503.07087) ![](https://img.shields.io/badge/arXiv-2025.03-red)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Lifelong Imitation Learning with Multimodal Latent Replay and Incremental Adjustment](https://openaccess.thecvf.com/content/CVPR2026/papers/Yu_Lifelong_Imitation_Learning_with_Multimodal_Latent_Replay_and_Incremental_Adjustment_CVPR_2026_paper.pdf) | CVPR 2026 | [Code](https://github.com/yfqi/lifelong_mlr_ifa) |
+| [iManip: Skill-Incremental Learning for Robotic Manipulation](https://arxiv.org/pdf/2503.07087) | arXiv 2025.03 | - |
+| [Task-free Lifelong Robot Learning with Retrieval-based Weighted Local Adaptation](https://arxiv.org/pdf/2410.02995) | arXiv 2024.10 | - |
+
+### Lifecycle / System Framework
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Arcadia: Toward a Full-Lifecycle Framework for Embodied Lifelong Learning](https://arxiv.org/abs/2512.00076) | ICML 2026 | [Code](https://github.com/Embodied-Arcadia/EmbodiedKit/) |
 
 ## 🖌️ Continual Learning in Diffusion Model
 
 ### Architecture-based Approaches
-* Bring Your Dreams to Life: Continual Text-to-Video Customization [[Paper]](https://arxiv.org/pdf/2512.05802) [[Code]](https://github.com/JiahuaDong/CCVD) ![](https://img.shields.io/badge/AAAI-2026-blue)
-* Continual Diffusion: Continual Customization of Text-to-Image Diffusion with C-LoRA [[Paper]](https://arxiv.org/pdf/2304.06027) ![](https://img.shields.io/badge/TMLR-2024-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/pdf/2512.05802) | AAAI 2026 | [Code](https://github.com/JiahuaDong/CCVD) |
+| [Continual Diffusion: Continual Customization of Text-to-Image Diffusion with C-LoRA](https://arxiv.org/pdf/2304.06027) | TMLR 2024 | - |
 
 ### Regularization-based Approaches
-* Continual Personalization for Diffusion Models [[Paper]](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_Continual_Personalization_for_Diffusion_Models_ICCV_2025_paper.pdf) ![](https://img.shields.io/badge/ICCV-2025-blue)
-* ConceptGuard: Continual Personalized Text-to-Image Generation with Forgetting and Confusion Mitigation [[Paper]](https://arxiv.org/pdf/2503.10358?) ![](https://img.shields.io/badge/CVPR-2025-blue)
-* Mining Your Own Secrets: Diffusion Classifier Scores for Continual Personalization of Text-to-Image Diffusion Models [[Paper]](https://arxiv.org/pdf/2410.00700) ![](https://img.shields.io/badge/ICLR-2025-blue)
-* How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization? [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2024/file/eadb6e5ed8a02ada4affb07dfd62ab5e-Paper-Conference.pdf) [[Code]](https://github.com/JiahuaDong/CIFC) ![](https://img.shields.io/badge/NeurIPS-2024-blue)
-* Towards Lifelong Few-Shot Customization of Text-to-Image Diffusion [[Paper]](https://arxiv.org/pdf/2411.05544) ![](https://img.shields.io/badge/arXiv-2024.11-red)
-* MuseumMaker: Continual Style Customization without Catastrophic Forgetting [[Paper]](https://arxiv.org/pdf/2404.16612) ![](https://img.shields.io/badge/TIP-2025-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [MuseumMaker: Continual Style Customization without Catastrophic Forgetting](https://arxiv.org/pdf/2404.16612) | TIP 2025 | - |
+| [Mining Your Own Secrets: Diffusion Classifier Scores for Continual Personalization of Text-to-Image Diffusion Models](https://arxiv.org/pdf/2410.00700) | ICLR 2025 | - |
+| [Continual Personalization for Diffusion Models](https://openaccess.thecvf.com/content/ICCV2025/papers/Liao_Continual_Personalization_for_Diffusion_Models_ICCV_2025_paper.pdf) | ICCV 2025 | - |
+| [ConceptGuard: Continual Personalized Text-to-Image Generation with Forgetting and Confusion Mitigation](https://arxiv.org/pdf/2503.10358?) | CVPR 2025 | - |
+| [Towards Lifelong Few-Shot Customization of Text-to-Image Diffusion](https://arxiv.org/pdf/2411.05544) | arXiv 2024.11 | - |
+| [How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://proceedings.neurips.cc/paper_files/paper/2024/file/eadb6e5ed8a02ada4affb07dfd62ab5e-Paper-Conference.pdf) | NeurIPS 2024 | [Code](https://github.com/JiahuaDong/CIFC) |
 
 ### Replay-based Approaches
-* Create Your World: Lifelong Text-to-Image Diffusion [[Paper]](https://arxiv.org/pdf/2309.04430) ![](https://img.shields.io/badge/TPAMI-2024-blue)
+
+| Paper | Venue | Code |
+|---|---:|---|
+| [Create Your World: Lifelong Text-to-Image Diffusion](https://arxiv.org/pdf/2309.04430) | TPAMI 2024 | - |
 
 ## 🌞 Citation
 
@@ -199,6 +284,3 @@ The remarkable progress of generative models has equipped AI systems with human-
   year={2025}
 }
 ```
-
-
-
